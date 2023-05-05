@@ -1,8 +1,6 @@
 # Eugenio Culurciello
 # learn sequence code LSTM
-
-# from: https://machinelearningmastery.com/lstm-for-time-series-prediction-in-pytorch/
-
+x
 import torch
 import numpy as np
 import matplotlib.pyplot as plt

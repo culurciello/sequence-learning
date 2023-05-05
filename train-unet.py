@@ -1,8 +1,6 @@
 # Eugenio Culurciello
 # learn sequence code - Unet sequence to sequence S2S
 
-# from: https://machinelearningmastery.com/lstm-for-time-series-prediction-in-pytorch/
-
 import torch
 import numpy as np
 import matplotlib.pyplot as plt
