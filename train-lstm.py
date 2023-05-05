@@ -9,8 +9,6 @@ import matplotlib.pyplot as plt
 
 
 class myDataset(torch.utils.data.Dataset):
-    """Face Landmarks dataset."""
-
     def __init__(self, data):
         self.data = data
         self.inputs = data[:,:-1]
@@ -78,7 +76,7 @@ torch.manual_seed(0)
 data_x_axis = np.linspace(-2*np.pi, 2*np.pi, 1000)
 timeseries = torch.Tensor(np.sin(data_x_axis)).unsqueeze(0).unsqueeze(2) # batch and feature size = 1
 # timeseries = timeseries.reshape(1,1,-1)
-timeseries = (timeseries - timeseries.mean())/timeseries.std()
+timeseries = (timeseries - timeseries.mean())/timeseries.std() # normalize
 print('timeseries input shape:', timeseries.shape)
 
 train_size = int(timeseries.shape[1] * 0.9)
